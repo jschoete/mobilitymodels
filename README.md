@@ -12,3 +12,5 @@ public static void main(String[] args) {
 	new MobilityModel(property, constraint, node);
 }
 ```
+
+after which a JViewer window pops up, in which the user may start the mobility model throught the right-click menu.
