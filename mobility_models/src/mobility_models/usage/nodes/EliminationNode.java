@@ -1,4 +1,4 @@
-package mobility_models.usage.distributed.nodes;
+package mobility_models.usage.nodes;
 
 import io.jbotsim.core.Color;
 import io.jbotsim.core.Link;
