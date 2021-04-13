@@ -1,12 +1,13 @@
-package mobility_models.usage;
+package usage;
 
+import io.jbotsim.core.Topology;
+import io.jbotsim.ui.JViewer;
 import mobility_models.MobilityModel;
 import mobility_models.constraints.Constraint;
 import mobility_models.constraints.racetrack.*;
 import mobility_models.properties.Property;
 import mobility_models.properties.gridswarm.PR_gridswarm;
-import mobility_models.properties.roundabout.*;
-import mobility_models.usage.nodes.EliminationNode;
+import usage.nodes.EliminationNode;
 
 public class Main {
 
@@ -36,7 +37,11 @@ public class Main {
 //        node = FloodNode.class;
         node = EliminationNode.class;
 
-        new MobilityModel(property, constraint, node);
+        MobilityModel mobilityModel = new MobilityModel(property, constraint, node);
+        Topology topology = mobilityModel.getTopology();
+        //new JViewer(topology);
+        topology.start();
+
     }
 
 }

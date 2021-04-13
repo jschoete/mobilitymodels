@@ -1,4 +1,4 @@
-package mobility_models.usage.nodes;
+package usage.nodes;
 
 import io.jbotsim.core.Color;
 import io.jbotsim.core.Message;
